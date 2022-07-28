@@ -1,4 +1,3 @@
-
 # Modules
 
 from aiogram import Bot, Dispatcher
@@ -14,7 +13,6 @@ logging.basicConfig(level=logging.INFO)
 # Default Var
 
 storage = MemoryStorage()
-bot = Bot(token, parse_mode='html')
+bot = Bot(token, parse_mode="html")
 dp = Dispatcher(bot, storage=storage)
 db = SQLighter("db.db")
-
